@@ -8,4 +8,24 @@ public class FuncionarioComissionado extends Funcionario{
         this.taxaCommissao = taxaCommissao;
         this.vendasBrutas = vendasBrutas;
     }
+
+    public double getTaxaCommissao() {
+        return taxaCommissao;
+    }
+
+    public void setTaxaCommissao(double taxaCommissao) {
+        this.taxaCommissao = taxaCommissao;
+    }
+
+    public double getVendasBrutas() {
+        return vendasBrutas;
+    }
+
+    public void setVendasBrutas(double vendasBrutas) {
+        this.vendasBrutas = vendasBrutas;
+    }
+
+    public double getRendimento(){
+        return taxaCommissao*vendasBrutas;
+    }
 }
